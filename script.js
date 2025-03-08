@@ -49,6 +49,4 @@ function urlcheck() {
     document.getElementById('h2').innerHTML = mensagem;
 }
 
-window.onload = () => {
-    urlcheck();
-};
+urlcheck();
