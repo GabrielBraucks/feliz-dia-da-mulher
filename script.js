@@ -35,7 +35,7 @@ function adicionarFlor() {
     document.getElementById('area-das-flores').appendChild(divFlor);
 }
 
-window.onload = () => {
+function urlcheck() {
     const params = new URLSearchParams(window.location.search);
     let mensagem = params.get("mensagem");
 
@@ -47,4 +47,8 @@ window.onload = () => {
     }    
 
     document.getElementById('h2').innerHTML = mensagem;
+}
+
+window.onload = () => {
+    urlcheck();
 };
