@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: #ff1563;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.infos {
+    position: absolute;
+    justify-items: center;
+    margin-bottom: 350px;
+    color: #ffa115;
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25pt;
+}
+
+h2 {
+    font-size: 23pt;
+}
+
+.infos h1, .infos h2 {
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+}
+
+h1 {
+    position: relative;
+    z-index: 105;
+}
+
+.area-das-flores {
+    z-index: 51;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.area-das-flores div {
+    position: absolute;
+    border-radius: 100%;
+    box-shadow:  0px 0px 60px;
+    scale: 0;
+    animation-duration: .25s;
+    animation-name: pop-in;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+}
+
+@keyframes pop-in {
+    0% { scale: 0; }
+    50% { scale: 1.2; }
+    100% { scale: 1; }
+}
+
+img {
+    object-fit: cover;
+}
+
+.area-das-flores img {
+    width: 210%;
+    height: 210%;
+    transform: translate(-25%, -24%);
+}
+
+.bg-fx {
+    z-index: -1000;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: multiply;
+    opacity: 60%;
+}
+
+.top-fx {
+    z-index: 100;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: multiply;
+    opacity: 20%;
+}
+
+.top-film-fx {
+    z-index: 110;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    mix-blend-mode: multiply;
+    opacity: 30%;
+}
+
+@media (max-width: 600px) {
+    .infos {
+        font-size: 5vw;
+        margin-bottom: 250px; /* Ajusta a posição para não ficar fora da tela */
+    }
+
+    .infos h1 {
+        font-size: 11vw;
+    }
+
+    .infos h2 {
+        font-size: 5.8vw;
+    }
+}
