@@ -34,3 +34,17 @@ function adicionarFlor() {
 
     document.getElementById('area-das-flores').appendChild(divFlor);
 }
+
+window.onload = () => {
+    const params = new URLSearchParams(window.location.search);
+    let mensagem = params.get("mensagem");
+
+    if(mensagem == null || mensagem == "") {
+        let urlAtual = new URL(window.location.href);
+        urlAtual.searchParams.set("mensagem", "");
+        window.history.pushState({}, "", urlAtual);
+        mensagem = `Escreva sua mensagem na URL após "mensagem=". Clique na tela para gerar quantas flores quiser.`;
+    }    
+
+    document.getElementById('h2').innerHTML = mensagem;
+};

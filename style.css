@@ -28,7 +28,11 @@ body {
 }
 
 h2 {
-    font-size: 23pt;
+    font-size: 27pt;
+    width: calc(80vw);
+    text-align: center;
+    white-space: wrap;
+    font-weight: 400;
 }
 
 .infos h1, .infos h2 {
@@ -107,14 +111,15 @@ img {
 @media (max-width: 600px) {
     .infos {
         font-size: 5vw;
-        margin-bottom: 250px; /* Ajusta a posição para não ficar fora da tela */
+        margin-bottom: 0px; /* Ajusta a posição para não ficar fora da tela */
+        word-wrap: break-word;
     }
 
     .infos h1 {
-        font-size: 11vw;
+        font-size: 12vw;
     }
 
     .infos h2 {
-        font-size: 5.8vw;
+        font-size: 8vw;
     }
 }
