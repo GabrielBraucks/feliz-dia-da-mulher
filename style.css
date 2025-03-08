@@ -7,7 +7,7 @@ body {
     position: absolute;
     width: 100vw;
     height: 100vh;
-    background-color: #ff1563;
+    background-color: #ff1553;
     overflow-x: hidden;
     overflow-y: hidden;
     display: flex;
@@ -85,16 +85,16 @@ img {
     z-index: -1000;
     position: absolute;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     mix-blend-mode: multiply;
-    opacity: 60%;
+    opacity: 80%;
 }
 
 .top-fx {
     z-index: 100;
     position: absolute;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     mix-blend-mode: multiply;
     opacity: 20%;
 }
@@ -103,7 +103,7 @@ img {
     z-index: 110;
     position: absolute;
     width: 100vw;
-    height: 120vh;
+    height: 100vh;
     mix-blend-mode: multiply;
     opacity: 30%;
 }
