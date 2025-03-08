@@ -85,7 +85,7 @@ img {
     z-index: -1000;
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     mix-blend-mode: multiply;
     opacity: 60%;
 }
@@ -94,7 +94,7 @@ img {
     z-index: 100;
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     mix-blend-mode: multiply;
     opacity: 20%;
 }
@@ -103,7 +103,7 @@ img {
     z-index: 110;
     position: absolute;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
     mix-blend-mode: multiply;
     opacity: 30%;
 }
